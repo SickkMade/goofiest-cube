@@ -18,6 +18,10 @@ class Box{
         document.addEventListener('mousedown', this.mousedown.bind(this))
         document.addEventListener('mouseup', this.mouseup.bind(this))
         document.addEventListener('mousemove', this.mousemove.bind(this))
+        document.addEventListener('touchstart', this.mousedown.bind(this))
+        document.addEventListener('touchend', this.mouseup.bind(this))
+        document.addEventListener('touchcancel', this.mouseup.bind(this))
+        document.addEventListener('touchmove', this.mousemove.bind(this))
     }
     mousemove(event){
         requestAnimationFrame(() => {
