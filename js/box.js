@@ -22,7 +22,6 @@ class Box{
     mousemove(event){
         requestAnimationFrame(() => {
             if(!this.isMouseDown) return
-            console.log(this.posStartY)
             this.box.style.transform = `
             rotateX(${this.posStartY + (event.clientY - this.cursorStartY)}deg) 
             rotateY(${this.posStartX + (event.clientX - this.cursorStartX)}deg)
