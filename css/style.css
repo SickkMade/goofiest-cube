@@ -95,3 +95,12 @@ footer {
 .right{transform:rotateY(90deg) translateZ(-100px);}
 .bottom{transform:rotateX(90deg) translateZ(-100px);}
 .top{transform:rotateX(90deg) translateZ(100px);}
+
+.text{
+     color:red;
+     height:82px;
+     width:200px;
+     margin-top:35%;
+     font-size: 2rem;
+     background-color: rgba(0, 0, 0, 0.5);
+}
